@@ -1,7 +1,4 @@
-from FuncionesMetricas import *
-import matplotlib.pyplot as plt
 import numpy as np
-
 
 def Compute_Mean_Vector(vectors):
     dimension=len(vectors[0])
@@ -36,6 +33,3 @@ def kmeans(vectors,k,iterations,DistanceFunction):
         current_centroids=[Compute_Mean_Vector(group) for group in clusters]
         it+=1
     return centroids,clusters
-
-
-kmeans()
